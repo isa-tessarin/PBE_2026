@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora de salário líquido</title>
+    <title>Calculadora</title>
 </head>
 <body>
     <form action="logica.php" method="POST">
-    <label for="">Nome do funcionário</label>
-    <input type="nome" name="nome">
+    <label for="">Primeiro número:</label>
+    <input type="number" name="numero1">
     <br>
     <label for="">Segundo número:</label>
     <input type="number" name="numero2">
@@ -16,10 +16,10 @@
     <button type="submit">enviar</button>
     <select name="Operação">
         <option value="">Selecione as operações</option>
-        <option value="">soma</option>
-        <option value="">subtração</option>
-        <option value="">multiplicação</option>
-        <option value="">divisão</option>
+        <option value="+">soma</option>
+        <option value="-">subtração</option>
+        <option value="*">multiplicação</option>
+        <option value="/">divisão</option>
 
         <br>
     </form>
