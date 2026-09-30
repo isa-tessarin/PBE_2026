@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Evento</title>
 </head>
-    <body  bgcolor="#4A147A" text="#FFFFFF">
+    <body bgcolor="#4A147A" text="#FFFFFF">
         <img width= "20%"src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/b963f9116104893.605b4f4ea67b6.png">
         <h1><b>Ingresso</b></h1>
         <p><b>Nome:</b><br><?= $nome_cliente ?></p>
