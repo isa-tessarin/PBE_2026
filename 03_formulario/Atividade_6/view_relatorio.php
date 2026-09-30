@@ -16,4 +16,4 @@
             <p><b>Você recebeu 10% de desconto!</b></p>
         <?php endif; ?>
     </body>
-</htm>
+</html>
