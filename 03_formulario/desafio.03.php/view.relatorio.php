@@ -15,7 +15,6 @@
             ?>
         </form>
         <?php if($desconto > 10)?>
-        <p><b>Parabéns, Você ganhou desconto!!<b></p>
-        <?php endif ?>
+        <p style="font-size: 25px;"><b>Parabéns, Você ganhou desconto!!<b></p>
     </body>
 </html>
