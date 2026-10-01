@@ -8,6 +8,21 @@ $tipo = $_POST['tipo'];
 
 $preco = 45;
 
+$shows = [
+        "data" => "$data",
+        "nome_cliente" => "$nome_cliente",
+        "nome_evento" => "$nome_evento",
+        "horario" => "$horario",
+        "tipo" => "$tipo",
+        "quantidade" => "$quantidade"
+    ];
+
+$informacoes="";
+
+foreach ($shows as $chave => $show) {
+    $informacoes .= "$chave: $show <br>";
+}
+
 if($tipo == "Meia"){
     $preco = $preco/2;
 }
