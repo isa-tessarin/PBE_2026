@@ -8,13 +8,20 @@ $tipo = $_POST['tipo'];
 
 $preco = 45;
 
+if($tipo == "Meia"){
+    $preco = $preco/2;
+}
+
+$total = $preco*$quantidade;
+
 $shows = [
         "Nome Cliente" => "$nome_cliente",
         "Nome Evento" => "$nome_evento",
         "Quantidade" => "$quantidade",
         "Data" => "$data",
         "Horario" => "$horario",
-        "Tipo" => "$tipo"
+        "Tipo" => "$tipo",
+        "Preço" => "$preco"
     ];
 
 $informacoes="";
@@ -23,16 +30,6 @@ foreach ($shows as $chave => $show) {
     $informacoes .= "$chave: $show <br>";
 }
 
-if($tipo == "Meia"){
-    $preco = $preco/2;
-}
-
-if($quantidade > 10){
-    $desconto = $preco * 10/100;
-    $preco = $preco - $desconto;
-}
-
-$total = $preco*$quantidade;
 
 require_once "view.relatorio.php";
 

@@ -14,7 +14,5 @@
                 }
             ?>
         </form>
-        <?php if($desconto > 10)?>
-        <p style="font-size: 25px;"><b>Parabéns, Você ganhou desconto!!<b></p>
     </body>
 </html>
