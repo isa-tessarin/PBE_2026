@@ -23,7 +23,7 @@ class Carro{
     }
 
     public function dirigir($km){
-        $this->consumo = $km/$km/$this->tanque;
+        $this->consumo = $km/($km/$this->tanque);
         if($this->tanque <= 0){
             echo "ERRO! O $this->modelo não poderá andar!";
         }
@@ -31,6 +31,7 @@ class Carro{
     
     public function exibirInfo(){
         echo "O modelo do carro é $this->modelo <br> O seu consumo foi de $this->consumo Km <br> Seus litros disponiveis são: $this->tanque litros <br>";
+        echo "-------------------------------------------------------- <br>";
     }
 }
 $carro1 = new Carro("Civic",12,20);
