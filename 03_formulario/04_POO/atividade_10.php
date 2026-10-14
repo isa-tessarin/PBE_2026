@@ -12,7 +12,7 @@ class Carro{
     }
     
     public function abastecer($litros){
-        if($litros < 0){
+        if($litros <= 0){
             echo "ERRO!, só pode abastecer com números positivos";
         }else{
         $litros = $this->tanque + $litros;
