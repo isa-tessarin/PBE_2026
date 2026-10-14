@@ -5,21 +5,20 @@ class Carro{
     private $consumo;
     private $tanque;
 
-    public function __construct($modelo,$consumo,$tanque){
+    public function __construct($modelo,$consumo = 10,$tanque = 0){
         $this->modelo = $modelo;
         $this->consumo = $consumo;
         $this->tanque = $tanque;
-        if($this->tanque == " "){
-            $this->tanque = 0;
-        }
     }
     
-    public function abastecer(){
-        if($this->tanque < 0){
+    public function abastecer($litros){
+        if($litros < 0){
             echo "ERRO!, só pode abastecer com números positivos";
+        }else{
+        $litros = $this->tanque + $litros;
+        echo "<br> Seus carro foi abastecido! <br>";
+        echo "Foram abastecidos $litros litros! <br>";
         }
-        $this->tanque = $this->tanque + $tanque;
-        echo "Seus carro foi abastecido!";
     }
 
     public function dirigir($km){
@@ -38,4 +37,5 @@ $carro1 = new Carro("Civic",12,20);
 $carro1->exibirInfo();
 $carro1->dirigir(10);
 $carro1->exibirInfo();
+$carro1->abastecer(-2);
 ?>
