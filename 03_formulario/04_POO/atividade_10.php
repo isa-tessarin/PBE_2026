@@ -30,9 +30,11 @@ class Carro{
     }
     
     public function exibirInfo(){
-        echo "O modelo do carro é $this->modelo <br> O seu consumo foi de $this->consumo Km <br> Seus litros disponiveis são: $this->tanque litros";
+        echo "O modelo do carro é $this->modelo <br> O seu consumo foi de $this->consumo Km <br> Seus litros disponiveis são: $this->tanque litros <br>";
     }
 }
 $carro1 = new Carro("Civic",12,20);
+$carro1->exibirInfo();
+$carro1->dirigir(10);
 $carro1->exibirInfo();
 ?>
