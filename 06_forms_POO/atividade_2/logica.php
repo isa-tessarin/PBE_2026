@@ -1,5 +1,6 @@
 <?php
 require_once "Aluno.php";
+
 $nome = $_POST['nome'];
 $turma = $_POST['turma'];
 $nota1 = $_POST['nota_1'];
